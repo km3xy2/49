@@ -1,0 +1,66 @@
+05.11 21:32
+termux删除文件和文件夹的命令使用Linux命令
+Linux删除文件和文件夹的命令
+2020-07-25 阅读(389)
+本篇文章记录一下linux下删除文件、删除文件夹、删除文件夹以及以下所有文件的命令，方便日后查阅。
+
+删除单个文件命令
+
+ 命令格式
+rm -f 文件路径
+
+例子
+rm -f /home/www/demo.txt
+rm -f demo2.text
+
+-f  表示就是直接强行删除，不作任何确认提示的意思
+删除文件夹包括文件夹下的所有文件
+
+ 命令格式
+rm -rf 文件路径
+
+例子1
+rm -rf /home/www/
+
+-r 表示向下递归，不管有多少级目录，一并删除
+-f 表示就是直接强行删除，不作任何确认提示的意思
+删除文件夹下的所有文件但是是删除文件夹本身
+
+比如我要删除 /home/www/ceshi目录下的所有文件但是 保留着/home/www/ceshi 这个目录
+
+cd /home/www/ceshi/
+先通过上面命令进入你要删除的目录 ,再执行下面命令删除所有文件
+find * | xargs rm -rf
+
+例子2
+
+先ls命令查完,,,,,,,,,,,,,,,之后再删
+~ $ ls
+composer-setup.php  composer.phar  www
+composer.json       downloads
+composer.lock       storage
+~ $ ls www
+123.txt  composer.json  index.php
+~ $ rm -f   www/123.txt
+
+~ $ ls www
+composer.json  index.php
+
+~ $ mkdir ~/www/www2
+
+~ $ ls www
+composer.json  index.php  www2
+
+~ $ vim  www/www2/w.php
+~ $ ls www/www2
+w.php
+~ $  rm -rf   www/www2
+
+~ $ ls www
+composer.json  index.php
+~ $
+
+
+
+
+

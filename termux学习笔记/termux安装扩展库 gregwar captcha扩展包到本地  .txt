@@ -1,0 +1,114 @@
+05.11 20:34
+termux用 $ composer require gregwar/captcha命令安装 captcha扩展包到本地
+
+termux
+
+用  $ composer require gregwar/captcha命令安装gregwar/captcha扩展包到本地
+
+
+先用termux安装composer包管理工具
+
+安装
+
+pkg  install  composer
+
+查看
+composer  -v
+
+
+然后，
+
+就能使用composer require命令了，
+
+termux安装gregwar/captcha到本地
+
+用  $ composer require gregwar/captcha命令安装gregwar/captcha到本地
+
+用cd命令+目录文件夹名称 进入本地目录
+
+用 cd  主目录文件夹名称/目录文件夹名称/以
+
+此类推
+
+回车进入，
+
+命令进入本地目录，
+
+
+~ $ cd storage/shared/nginx/
+
+~/.../shared/nginx $ composer require gregwar/captcha
+
+
+Using version ^1.1 for gregwar/captcha
+./composer.json has been created
+Running composer update gregwar/captcha
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 2 installs, 0 updates, 0 removals
+  - Locking gregwar/captcha (v1.1.9)
+  - Locking symfony/finder (v5.2.4)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 2 installs, 0 updates, 0 removals
+  - Installing symfony/finder (v5.2.4): Extracting archive
+  - Installing gregwar/captcha (v1.1.9): Extracting archive
+Generating autoload files
+1 package you are using is looking for funding.
+Use the `composer fund` command to find out more!
+~/.../shared/nginx $
+
+
+返回手机，进入手机文件管理，找到nginx文件夹，打开，文件夹里面出现vendor文件夹，说明安装成功
+
+安装扩展包，到手机本地目录，不用特意指定安装路径，
+
+
+在termux里
+
+用cd命令＋目录文件夹名称
+
+进入手机本地目标文件夹，
+
+然后输入下载命令就可以了
+
+~ $ cd storage/shared/nginx/
+
+~/.../shared/nginx $ composer require gregwar/captcha
+
+不用指定路径
+
+
+还有，用cd＋文件夹名称进入目录
+
+不能越级进入其他目录，
+
+进入目录后，然后cd命令  $cd
+返回
+
+返回后，cd+目录文件夹名称/其他目录文件夹名称 ， 进入目标文件夹目录，
+
+进入目标文件夹后，需要返回主目录
+
+然后cd命令  $cd
+
+返回根目录
+
+，然后在cd+目录文件夹名称/其他文件夹名称/
+
+进入其他目标文件夹目录里
+
+一次只能进入一个目录，不能越级进入，
+
+————————————————
+
+cd   +目录文件夹名称/
+然后
+               ls     查看目录文件夹里的文件
+
+cd   +目录文件夹名称/其他文件夹
+
+ls  查看目录文件夹下的/其实文件夹下的文件
+
+
+查看完要返回cd根    $cd   返回
